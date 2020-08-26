@@ -30,7 +30,7 @@ body {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #777777;
+  color: #202225;
   background: url(../img/body-bg.png) no-repeat center; }
 
 h1,
@@ -344,11 +344,13 @@ button:focus {
 ============================================================================================ */
 .home_banner_area {
   z-index: 1;
+  background: #202225;
   background: url(../img/banner/home-banner.png) no-repeat top center;
   background-position: center;
   background-size: cover; }
   .home_banner_area .banner_inner {
-    width: 100%; }
+    width: 100%;
+    padding-bottom: 50px; }
     .home_banner_area .banner_inner .home_right_img {
       padding-top: 197px; }
       @media (max-width: 1480px) {
@@ -377,7 +379,7 @@ button:focus {
           position: absolute;
           top: 50%;
           left: 23%;
-          background: #000000; }
+          background: #202225; }
           @media (max-width: 575px) {
             .home_banner_area .banner_inner .banner_content h3:after {
               display: none; } }
@@ -410,6 +412,7 @@ button:focus {
     overflow: hidden;
     width: 100%;
     min-height: 485px;
+    background: #202225;
     background: url(../img/banner/common-banner.png) no-repeat right bottom;
     background-size: 90% 85%;
     width: 98%;
@@ -419,7 +422,7 @@ button:focus {
         min-height: 350px; } }
     @media (max-width: 991px) {
       .banner_area .banner_inner {
-        background: #854fee;
+        background: #202225;
         width: 100%; } }
     .banner_area .banner_inner .banner_content {
       margin-left: 50px;
@@ -440,7 +443,7 @@ button:focus {
             font-size: 30px; } }
       .banner_area .banner_inner .banner_content .page_link a {
         font-size: 14px;
-        color: #fff;
+        color: #202225;
         font-family: "Roboto", sans-serif;
         margin-right: 20px;
         position: relative; }
@@ -1476,7 +1479,8 @@ b, sup, sub, u, del {
   color: #f8b600; }
 
 h1 {
-  font-size: 36px; }
+  font-size: 36px;
+  color: #ffffff; }
 
 h2 {
   font-size: 30px; }
@@ -1488,10 +1492,12 @@ h4 {
   font-size: 18px; }
 
 h5 {
-  font-size: 16px; }
+  font-size: 16px;
+  color: #ffffff; }
 
 h6 {
-  font-size: 14px; }
+  font-size: 14px;
+  color: #ffffff; }
 
 .typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
   color: #777777; }
@@ -2469,7 +2475,10 @@ h6 {
 /* Start Features Area css
 ============================================================================================ */
 .features_area {
-  padding-bottom: 170px; }
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(32,34,37,1) 3%, rgba(32,34,37,1) 97%, rgba(255,255,255,1) 100%); 
+  padding-top: 80px;
+  padding-bottom: 80px; }
   @media (max-width: 1199px) {
     .features_area {
       padding-bottom: 50px; } }
@@ -2477,8 +2486,7 @@ h6 {
 .feature_item {
   padding: 45px 25px;
   text-align: center;
-  background: #f9f9fd;
-  cursor: pointer;
+  background: #efefef;
   margin-bottom: 30px;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
@@ -2608,7 +2616,8 @@ h6 {
 /* Start Portfolio Area css
 ============================================================================================ */
 .portfolio_area {
-  padding-bottom: 120px; }
+  padding-top: 80px;
+  padding-bottom: 20px; }
   @media (max-width: 991px) {
     .portfolio_area {
       padding-bottom: 50px; } }
@@ -3007,10 +3016,10 @@ h6 {
   /* Footer Area css
   ============================================================================================ */
   .footer_area {
-    padding-top: 80px !important;
+    padding-top: 20px !important;
     padding-bottom: 80px !important;
     background-image: none !important;
-    background-color: #fcf8ff; }
+    background-color: #99ccff; }
 
   /* Blog page Area css
   ============================================================================================ */
@@ -3249,21 +3258,22 @@ h6 {
 /* Footer Area css
 ============================================================================================ */
 .blog_version .footer_area {
-  background: #f9f9fd; }
+  background: #99ccff; }
   .blog_version .footer_area:before {
     content: none; }
 
 .footer_area {
-  padding: 120px 0;
+  padding: 40px 0;
   position: relative; }
   .footer_area:before {
     content: '';
     position: absolute;
-    top: -200px;
+    top: 0px;
     left: 0px;
     right: 0px;
     bottom: 0px;
-    background: #f9f9fd;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(32,34,37,1) 8%); 
     z-index: -1; }
   @media (max-width: 1024px) {
     .footer_area {
@@ -3281,8 +3291,8 @@ h6 {
     .footer_area .footer_social a {
       padding: 0 20px; }
       .footer_area .footer_social a i {
-        color: #788489;
-        font-size: 22px;
+        color: #cda9ff;
+        font-size: 44px;
         -webkit-transition: all 0.4s ease 0s;
         -moz-transition: all 0.4s ease 0s;
         -o-transition: all 0.4s ease 0s;
@@ -3297,6 +3307,8 @@ h6 {
     .footer_area .footer_bottom p {
       margin-bottom: 0; }
     .footer_area .footer_bottom a {
+      color: #ddc4ff; }
+    .footer_area .footer_bottom a:hover {
       color: #854fee; }
 
 /* End Footer Area css
