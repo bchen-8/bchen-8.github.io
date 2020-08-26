@@ -3016,10 +3016,12 @@ h6 {
   /* Footer Area css
   ============================================================================================ */
   .footer_area {
-    padding-top: 20px !important;
+    padding-top: 40px !important;
     padding-bottom: 80px !important;
     background-image: none !important;
-    background-color: #99ccff; }
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(32,34,37,1) 8%);
+  }
 
   /* Blog page Area css
   ============================================================================================ */
@@ -3089,7 +3091,7 @@ h6 {
 
   .home_banner_area .banner_inner {
     min-height: 300px;
-    padding-top: 200px;
+    padding-top: 100px;
     padding-bottom: 50px; }
 
   .home_banner_area .banner_inner .banner_content {
@@ -3197,6 +3199,8 @@ h6 {
   /* Footer Area css
   ============================================================================================ */
   .footer-area {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(32,34,37,1) 8%); 
     padding: 70px 0px; }
 
   .news_widget {
