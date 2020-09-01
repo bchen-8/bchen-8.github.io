@@ -343,11 +343,12 @@ button:focus {
 /* Home Banner Area css
 ============================================================================================ */
 .home_banner_area {
-  z-index: 1;
-  background: #202225;
-  background: url(../img/banner/home-banner.png) no-repeat top center;
-  background-position: center;
-  background-size: cover; }
+
+}
+  @media (max-width: 768px) {
+    .home_banner_area {
+      background: #202225; }
+  }
   .home_banner_area .banner_inner {
     width: 100%;
     padding-bottom: 50px; }
@@ -2440,6 +2441,7 @@ h6 {
 /* Start About Us Area css
 ============================================================================================ */
 .about_area {
+  background: #ffffff;
   position: relative; }
   .about_area .main_title {
     margin-bottom: 0px; }
@@ -2616,6 +2618,7 @@ h6 {
 /* Start Portfolio Area css
 ============================================================================================ */
 .portfolio_area {
+  background: #ffffff;
   padding-top: 80px;
   padding-bottom: 20px; }
   @media (max-width: 991px) {
@@ -2646,7 +2649,7 @@ h6 {
           margin-right: 20px; } }
 
 .portfolio_box {
-  margin-bottom: 80px; }
+  margin-bottom: 80px;}
   @media (max-width: 767px) {
     .portfolio_box {
       margin-bottom: 35px; } }
@@ -3320,3 +3323,32 @@ h6 {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+
+/*----------------------------------------------------*/
+/* CSS Added By Brooklyn Chen
+============================================================================================ */
+
+/* Desktop + Mobile Exclusive tags */
+#content-desktop {display: block;}
+#content-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+  #content-desktop {display: none;}
+  #content-mobile {display: block;}
+}
+
+#background_video {
+  position: fixed;
+  overflow: hidden;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* End CSS By Brooklyn Chen
+============================================================================================ */
+/*---------------------------------------------------- */
