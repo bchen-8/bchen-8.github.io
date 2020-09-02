@@ -2487,6 +2487,7 @@ h6 {
 
 .feature_item {
   padding: 45px 25px;
+  height: 340px;
   text-align: center;
   background: #efefef;
   margin-bottom: 30px;
@@ -2649,7 +2650,7 @@ h6 {
           margin-right: 20px; } }
 
 .portfolio_box {
-  margin-bottom: 80px;}
+  margin-bottom: 80px; }
   @media (max-width: 767px) {
     .portfolio_box {
       margin-bottom: 35px; } }
