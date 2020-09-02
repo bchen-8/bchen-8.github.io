@@ -87,9 +87,9 @@
 							<h6 class="text-lowercase">(she/her)</h6>
 							<h5 class="text-uppercase">Software Developer, Game Dev, Animator</h5>
 							<div class="d-flex align-items-center">
-								<a class="primary_btn" href="#contact_section"><span>Contact Me</span></a>
-								<a class="primary_btn" href="BC_Resume.pdf" download><span>Resume</span></a>
-								<a class="primary_btn" href="https://youtu.be/UpaRt27OQzg" download><span>Animation Reel</span></a>
+								<a class="primary_btn" href="#contact_section" id="contactButton"><span>Contact Me</span></a>
+								<a class="primary_btn" href="BC_Resume.pdf" target="_blank" download><span>Resume</span></a>
+								<a class="primary_btn" href="https://youtu.be/UpaRt27OQzg" target="_blank" download><span>Animation Reel</span></a>
 							</div>
 						</div>
 					</div>
@@ -305,36 +305,36 @@
 			<div class="filters-content">
 				<div class="row portfolio-grid justify-content-center">
 					<div class="col-lg-4 col-md-6 all latest">
-						<a href="https://chen27665.itch.io/project-paratoxic">
+						<a href="https://chen27665.itch.io/project-paratoxic" target="_blank">
   							<img src="img/portfolio/p1.png" alt="Project Paratoxic">
 						</a>
 						<div class="portfolio_box">
 							<div class="short_info">
-								<h4><a href="https://chen27665.itch.io/project-paratoxic">Project: Paratoxic</a></h4>
+								<h4><a href="https://chen27665.itch.io/project-paratoxic" target="_blank">Project: Paratoxic</a></h4>
 								<p>Programmer, Animator, Designer, Writer</p>
 							</div>
 						</div>
 					</div>
 
 					<div class="col-lg-4 col-md-6 all latest">
-						<a href="https://botanic-bunch.itch.io/urban-sprout">
+						<a href="https://botanic-bunch.itch.io/urban-sprout" target="_blank">
   							<img src="img/portfolio/p2.gif" alt="Urban Sprout">
 						</a>
 						<div class="portfolio_box">
 							<div class="short_info">
-								<h4><a href="https://botanic-bunch.itch.io/urban-sprout">Urban Sprout</a></h4>
+								<h4><a href="https://botanic-bunch.itch.io/urban-sprout" target="_blank">Urban Sprout</a></h4>
 								<p>Animator</p>
 							</div>
 						</div>
 					</div>
 
 					<div class="col-lg-4 col-md-6 all latest">
-						<a href="https://chen27665.itch.io/showcase-showdown">
+						<a href="https://chen27665.itch.io/showcase-showdown" target="_blank">
   							<img src="img/portfolio/p3.png" alt="Showcase Showdown">
 						</a>
 						<div class="portfolio_box">
 							<div class="short_info">
-								<h4><a href="https://chen27665.itch.io/showcase-showdown">Showcase Showdown</a></h4>
+								<h4><a href="https://chen27665.itch.io/showcase-showdown" target="_blank">Showcase Showdown</a></h4>
 								<p>Sole Developer</p>
 							</div>
 						</div>
@@ -618,6 +618,19 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="js/jquery-3.2.1.min.js"></script>
+
+	<script>
+		$('#contactButton').on('click', function(event) {
+		    var target = $(this.hash);
+		    if( target.length ) {
+		        event.preventDefault();    
+		        $('html, body').animate({
+		            scrollTop: target.offset().top
+		        }, "slow");
+		    }
+		});
+	</script>
+
 	<script src="js/popper.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/stellar.js"></script>
