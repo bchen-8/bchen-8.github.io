@@ -31,7 +31,10 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #202225;
-  background: url(../img/body-bg.png) no-repeat center; }
+  background: url(../img/body-bg.png) no-repeat center; 
+
+  overflow: hidden;
+}
 
 h1,
 h2,
@@ -3323,7 +3326,7 @@ h6 {
 /*# sourceMappingURL=style.css.map */
 
 /*----------------------------------------------------*/
-/* CSS Added By Brooklyn Chen
+/*Additional CSS
 ============================================================================================ */
 
 /* Desktop + Mobile Exclusive tags */
@@ -3335,6 +3338,7 @@ h6 {
   #content-mobile {display: block;}
 }
 
+/* Homepage Background Video */
 #background_video {
   position: fixed;
   overflow: hidden;
@@ -3347,6 +3351,28 @@ h6 {
   min-height: 100%;
 }
 
-/* End CSS By Brooklyn Chen
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #202225;
+  z-index: 99;
+}
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: "img/preloader_test.gif";
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+}
+
+/*
 ============================================================================================ */
 /*---------------------------------------------------- */
