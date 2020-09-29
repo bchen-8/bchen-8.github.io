@@ -3370,6 +3370,7 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
   margin: -100px 0 0 -100px;
+  z-index: 100;
   /* is width and height divided by two */
 }
 
