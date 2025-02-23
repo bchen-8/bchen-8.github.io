@@ -1306,7 +1306,6 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), url("images/bg.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
@@ -2189,3 +2188,29 @@ input, select, textarea {
 			}
 
 		}
+
+/*----------------------------------------------------*/
+/*Additional CSS
+============================================================================================ */
+
+/* Desktop + Mobile Exclusive tags */
+#content-desktop {display: block;}
+#content-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+  #content-desktop {display: none;}
+  #content-mobile {display: block;}
+}
+
+/* Homepage Background Video */
+#background_video {
+  position: fixed;
+  overflow: hidden;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
