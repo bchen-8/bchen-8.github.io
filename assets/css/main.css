@@ -1312,6 +1312,16 @@ input, select, textarea {
 		overflow-y: scroll;
 	}
 
+		@media screen and (max-width: 736px) {
+			body {
+				background-image: url("images/overlay.png"), url("images/bg.jpg");
+			}
+			body, input, textarea, select {
+				font-size: 12pt;
+			}
+
+		}
+
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
