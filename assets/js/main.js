@@ -29,6 +29,12 @@
 			}, 100);
 		});
 
+	// Video looper
+	document.querySelector('.videoPlayer').addEventListener('ended', function(e) {
+		e.target.currentTime = 0;
+		e.target.play();
+	}, false);
+
 	// Nav.
 		$nav_links
 			.on('click', function(event) {
