@@ -56,6 +56,15 @@
 		e.target.play();
 	}, false);
 
+	//Close Embed Video
+	document.getElementById("stop").onclick = function() {stopEmbeds()};
+
+	function stopEmbeds() {
+		log('stopEmbeds() ran.');
+		var embeds = document.getElementById("youtube_player")
+		embeds.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
+	};
+
 	// Panels.
 
 		// Initialize.
